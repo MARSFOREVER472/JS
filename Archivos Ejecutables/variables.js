@@ -6,4 +6,8 @@ var number2 = 9;
 
 // alert(nombre);
 
-alert(number1 + number2);
+// alert(number1 + number2);
+
+document.write(number1);
+
+console.log('HELLO WORLD!');
