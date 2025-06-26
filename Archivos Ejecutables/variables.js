@@ -1,13 +1,24 @@
 /* NUEVO ARCHIVO PARA TRABAJAR CON LAS VARIABLES EN JAVASCRIPT! */
 
-var nombre = 'Marcelo';
-var number1 = 27;
-var number2 = 9;
+// DECLARAMOS ALGUNAS VARIABLES BÁSICAS AQUÍ...
+
+var nombre = 'Marcelo',
+    segundoNombre = 'Andres',
+    number1 = 27,
+    number2 = 9;
+
+// SE EMITE UN MENSAJE PEQUEÑO ANTES DE ABRIR LA PÁGINA...
 
 // alert(nombre);
 
 // alert(number1 + number2);
 
-document.write(number1);
+// SE VISUALIZA LA ESCRITURA DENTRO DE LA PÁGINA EN FORMATO HTML...
+
+// document.write(number1 + number2);
+
+document.write(nombre + ' ' + segundoNombre);
+
+// SE DESPLIEGA UN MENSAJE POR CONSOLA UTILIZANDO JAVASCRIPT...
 
 console.log('HELLO WORLD!');
