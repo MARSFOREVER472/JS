@@ -5,7 +5,9 @@
 var nombre = 'Marcelo',
     segundoNombre = 'Andres',
     number1 = 27,
-    number2 = 9;
+    number2 = 9,
+    result = number1 + number2;
+
 
 // SE EMITE UN MENSAJE PEQUEÑO ANTES DE ABRIR LA PÁGINA...
 
@@ -17,7 +19,9 @@ var nombre = 'Marcelo',
 
 // document.write(number1 + number2);
 
-document.write(nombre + ' ' + segundoNombre);
+// document.write(nombre + ' ' + segundoNombre);
+
+document.write(result);
 
 // SE DESPLIEGA UN MENSAJE POR CONSOLA UTILIZANDO JAVASCRIPT...
 
