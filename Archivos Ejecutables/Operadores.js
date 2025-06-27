@@ -76,3 +76,11 @@
         var result = number1 <= number2; // "false".
 
         document.write(result);
+
+        /* OPERADORES BÁSICOS:
+
+            !       NOT.
+            &&      AND.
+            ||      OR.
+        
+        */
