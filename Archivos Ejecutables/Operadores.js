@@ -36,6 +36,8 @@
     // document.write(result);
 
     // OPERADORES DE INCREMENTO Y DECREMENTO:
+    
+    /*
 
     var number = 2;
     // var result = number - 1;
@@ -45,3 +47,32 @@
     document.write(result); // RESULTADO DE LA OPERACIÓN.
     document.write('<br >'); // SALTO DE LÍNEA.
     document.write(number); // VARIABLE NUMÉRICA.
+
+    */
+
+    // OPERADORES LÓGICOS O DE COMPARACIÓN:
+
+       /* OPERADORES:
+
+            ==    IGUAL A.
+            ===   IGUAL EN VALOR Y TIPO.
+            !=    DISTINTOS.
+            !==   DISTINTOS EN VALOR Y TIPO.
+            >     MAYOR QUE.
+            <     MENOR QUE.
+            >=    MAYOR O IGUAL QUE.
+            <=    MENOR O IGUAL QUE.
+
+       */
+
+        var number1 = 10; // PRIMER VALOR.
+        var number2 = 5; // SEGUNDO VALOR.
+        // var result = number1 == number2; // "false".
+        // var result = number1 != number2; // "true".
+        // var result = number1 !== number2; // "true".
+        // var result = number1 > number2; // "true".
+        // var result = number1 < number2; // "false".
+        // var result = number1 >= number2; // "true".
+        var result = number1 <= number2; // "false".
+
+        document.write(result);
