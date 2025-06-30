@@ -28,3 +28,16 @@
        document.writeln(months[11]);
 
     */
+
+    // SE DESPLIEGAN LOS MESES DENTRO DE UN ARREGLO POR CONSOLA DEL NAVEGADOR...
+
+    console.log(months[3]);
+
+    // SE VISUALIZAN LOS ELEMENTOS DENTRO DE UN ARREGLO POR CONSOLA...
+
+    var friends = [];
+
+    friends[0] = 'Mars';
+    friends[1] = 'Forever';
+
+    
