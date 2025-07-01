@@ -22,8 +22,36 @@ for (inicio; condicion; actualizacion)
 
 */
 
+// ----- CICLO DEL 1 AL 10...
+
+/*
+
 for (var i = 1; i <= 10; i++)
 {
     document.write(i);
     document.write('<br>');
 }
+
+*/
+
+// ----- CICLO DEL 10 AL 1...
+
+/*
+
+for (var i = 10; i >= 0; i--)
+{
+    document.write(i);
+    document.write('<br>');
+}
+
+*/
+
+// ----- CICLO PARA RECORRER UN ARREGLO MEDIANTE "for"...
+
+var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+    for(var i = 0; i <= 11; i++)
+    {
+        document.write(i + 1 + '.- ' + months[i]);
+        document.write('<br>');
+    }
