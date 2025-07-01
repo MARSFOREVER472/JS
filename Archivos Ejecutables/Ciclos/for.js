@@ -50,8 +50,22 @@ for (var i = 10; i >= 0; i--)
 
 var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
+    // ----- FORMA 1...
+
+    /*
+
     for(var i = 0; i <= 11; i++)
     {
         document.write(i + 1 + '.- ' + months[i]);
+        document.write('<br>');
+    }
+
+    */
+
+    // ----- FORMA 2...
+
+    for(month in months)
+    {
+        document.write(months[month]);
         document.write('<br>');
     }
