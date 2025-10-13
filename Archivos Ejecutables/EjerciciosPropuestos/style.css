@@ -1,0 +1,13 @@
+body
+{
+    background-image: linear-gradient(to right, red, orange);
+    text-align: center;
+    font-family: 'Calibri', sans-serif;
+    font-size: 18px;
+    color: #FFE000;
+    text-shadow:
+      -1px -1px 1px #aaa,
+      0px 4px 1px rgba(0, 0, 0, 0.5),
+      4px 4px 5px rgba(0, 0, 0, 0.7),
+      0px 0px 7px rgba(0, 0, 0, 0.4);
+}
