@@ -20,3 +20,27 @@
     media = (rank.english + rank.programacion + rank.html) / 3;
 
     console.log("Promedio de " + rank.name + " es " + media);
+
+// EJERCICIO 2:
+
+// LO QUE SE PIDE: Define un objeto, mediante una expresión, que tenga dos propiedades: precio y descuento y un método neto. El método calculará el precio con el descuento aplicado. Los valores se pedirán por teclado.
+
+// ACLARACIONES: GUARDAR UNA EXPRESIÓN A TRAVÉS DE LA CLASE "object" "dress", "prize" 400 y "discount" 10. El método devolverá como resultado 360 (400 - 10 * 400 / 100).
+
+// SOLUCIÓN:
+
+   var dress, data;
+
+   dress = {
+
+      prize: 0,
+      discount: 0,
+      neto: function()
+      {
+         return this.prize * (1 - this.discount / 100);
+      }
+   }
+
+   dress.prize = parseInt(prompt("Precio Bruto: "));
+   dress.discount = parseInt(prompt("Precio Bruto: "));
+   console.log("El Precio Neto es de: " + dress.neto() + " €");
