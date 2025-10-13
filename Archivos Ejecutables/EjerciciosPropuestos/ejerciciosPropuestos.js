@@ -1,0 +1,1 @@
+// Los objetos son estructuras de datos complejas que se caracterizan por sus propiedades y por que pueden realizar acciones sobre si mismo (métodos). Para empezar mira en detalle la sección dedicada a  los objetos en Javascript y luego resuelve estos ejercicios básicos sobre objetos.
