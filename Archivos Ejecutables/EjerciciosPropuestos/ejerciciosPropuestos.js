@@ -45,13 +45,13 @@
    dress.discount = parseInt(prompt("Precio Bruto: "));
    console.log("El Precio Neto es de: " + dress.neto() + " €");
 
-   // EJERCICIO 3:
+// EJERCICIO 3:
 
-   // LO QUE SE PIDE: En esta propuesta debes crear una clase de nombre piedra (con class o con function) con dos propiedades: masa, volumen y un método densidad que calcule este valor (masa/volumen). Luego instancia al menos un objeto de esta clase, dale un valor a su masa y a su volumen y ejecuta el método densidad.
+// LO QUE SE PIDE: En esta propuesta debes crear una clase de nombre piedra (con class o con function) con dos propiedades: masa, volumen y un método densidad que calcule este valor (masa/volumen). Luego instancia al menos un objeto de esta clase, dale un valor a su masa y a su volumen y ejecuta el método densidad.
 
-   // ACLARACIONES: Consta de la clase objeto "oro", "masa de la muestra" 194 gr y "volumen" 10 cc. "Densidad" deberá devolver 19,4.
+// ACLARACIONES: Consta de la clase objeto "oro", "masa de la muestra" 194 gr y "volumen" 10 cc. "Densidad" deberá devolver 19,4.
 
-   // SOLUCIÓN:
+// SOLUCIÓN:
 
    class rock
    {
@@ -70,3 +70,65 @@
    var gold = new rock(194, 10);
 
    console.log("Densidad: " + gold.densidad());
+
+// EJERCICIO 4:
+
+// LO QUE SE PIDE: Construye una clase usando function para implementar una cuenta de efectivo. Poseerá dos propiedades: nombre del titular y saldo. Además debe tener dos métodos: ingresar() y retirar(). El primero incrementa el saldo en la cantidad indicada en el argumento y el segundo lo reduce. No se puede sacar más de lo que exista en el saldo. 
+
+// ACLARACIONES: A los métodos los invocaremos con las llamadas ingresar(1000) o retirar(100) Tras ingresar el saldo será 1000 y trs retirar el saldo será 900.
+
+// SOLUCIÓN:
+
+   Account = function(name, reward)
+   {
+      this.titular = name;
+      this.reward = reward;
+      this.ingresar = function(values)
+      {
+         this.reward += values;
+      }
+
+      this.cash = function(values)
+      {
+         if (values <= this.reward)
+         {
+             this.reward -= values;
+         }
+      }
+   }
+
+   var myAccount = new Account('Juan', 0);
+   myAccount.ingresar(1000);
+   console.log("El saldo actual es: " + myAccount.reward);
+   myAccount.cash(100);
+   console.log("El saldo actual de mi cuenta es: " + myAccount.reward);
+
+// EJERCICIO 5:
+
+// LO QUE SE PIDE:
+
+// SOLUCIÓN:
+
+// EJERCICIO 6:
+
+// LO QUE SE PIDE:
+
+// SOLUCIÓN:
+
+// EJERCICIO 7:
+
+// LO QUE SE PIDE:
+
+// SOLUCIÓN:
+
+// EJERCICIO 8:
+
+// LO QUE SE PIDE:
+
+// SOLUCIÓN:
+
+// EJERCICIO 9:
+
+// LO QUE SE PIDE:
+
+// SOLUCIÓN:
