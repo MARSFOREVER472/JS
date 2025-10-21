@@ -105,9 +105,68 @@
 
 // EJERCICIO 5:
 
-// LO QUE SE PIDE:
+/* LO QUE SE PIDE: Crea una clase Ficha, con su constructor, que se usará para almacenar el número de kilómetros recorridos por una persona en cada sesión de ejercicios. Las propiedades de la clase serán:
+
+   - name
+   - sessions
+   - numberSessions
+
+   El nombre es el de la persona, en los sesiones se almacenará el número de kilometros recorridos en cada sesión y numsesiones contiene el número de sesiones anotadas.
+
+   Tiene dos métodos:
+
+   - anotar: Anota los kilómetros.
+   - media: Calcula la media de kilómetros recorridos.
+
+*/
+
+/* ACLARACIONES: Cada persona tendrá su ficha construída con esta clase.
+
+   - Si ejecuto anotar(8), anotar(10), anotar(6), en las sesiones se anotarán 8, 10, 6.
+
+   - Si escribo media() devolverá 8 ((8+10+6)/3).
+
+   En la solución se usa el camino má primitivo posible: arrays y bucles básicos.
+
+*/
 
 // SOLUCIÓN:
+
+   class Chip
+   {
+      constructor(n)
+      {
+         this.name = n;
+         this.sessions = [];
+         this.numberSessions = 0;
+      }
+
+      anotar = function(km)
+      {
+         this.sessions[this.numberSessions] = km;
+         this.numberSessions++; 
+      }
+
+      media = function()
+      {
+         var media = 0;
+
+         for (let i = 0; i < this.sessions.length; i++)
+         {
+            media += this.sessions[i];
+         }
+
+         return media / this.numberSessions;
+      }
+   }
+
+   var fichaJuan = new Chip('Juan');
+
+   fichaJuan.anotar(10);
+   fichaJuan.anotar(8);
+   fichaJuan.anotar(6);
+
+   console.log("Kilometros en Promedio: " + fichaJuan.media());
 
 // EJERCICIO 6:
 
