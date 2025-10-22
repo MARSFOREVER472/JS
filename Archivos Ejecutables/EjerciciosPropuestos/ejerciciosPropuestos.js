@@ -170,9 +170,100 @@
 
 // EJERCICIO 6:
 
-// LO QUE SE PIDE:
+/* LO QUE SE PIDE:
+
+   Crea una clase que lamaremos Bus. Sus atributos serán:
+
+      - capacidad: número máximo de pasajeros.
+      - pasajeros: número de pasajeros (inicialmente 0).
+      - conductor: objeto conductor.
+
+   Sus métodos:
+
+      - subir(pasajeros): aumenta el numero de pasajeros
+      - bajar(pasajaeros): disminuye el número de pasajeros
+      - conductor: asigna un objeto conductor.
+
+   El objeto conductor es de una clase (Conductor) cuyos atributos son:
+
+      - nombre: nombre del conductor
+      - licencia: un número que identifica al condcutor.
+
+   Al crear el objeto se asigna también el conductor que no pueden subir más pasajeros que los máximos admitidos y no pueden bajar más de los que hay.
+
+*/
+
+/* ACLARACIONES: 
+
+   - El autobús linea1 puede llevar 40 pasajeros y su conductor se llama José su licencia es la 1234.
+
+   - Si se pide subir(25) , el atributo pasajeros valdrá 25.
+
+   - Si a continuación se pide subir(35) solo subirán 15, (2 + 15 son los 40 de máximo)
+
+   - Si pedimos bajar 45, el autobús se queda vacío.
+
+   - Si teniendo 35 pasajeros se pide que bajen 40 el autobús se queda vacío.
+
+*/
 
 // SOLUCIÓN:
+
+   class TransAntofagasta
+   {
+      constructor(chofer, cantidad)
+      {
+         this.chofer = chofer;
+         this.cantidad = cantidad;
+         this.usuarios = 0;
+      }
+
+      subir = function(numero)
+      {
+         if (this.usuarios + numero < this.cantidad)
+         {
+            this.usuarios += numero; 
+         }
+
+         else
+         {
+            this.usuarios = this.cantidad;
+         }
+      }
+
+      bajar = function(numero)
+      {
+         if (numero <= this.usuarios)
+         {
+            this.usuarios -= numero;
+         }
+
+         else
+         {
+            this.usuarios = 0;
+         }
+      }
+   }
+
+   class Chofer
+   {
+      constructor(nb, lic)
+      {
+         this.nombre = nb;
+         this.credencial = lic;
+      }
+   }
+
+   var chofer1 = new Chofer("Leon", 1234);
+   var linea102 = new TransAntofagasta(chofer1, 40);
+
+   console.log("Nombre del Chofer: " + linea102.chofer.nombre);
+   linea102.subir(30);
+   console.log("Pasajeros al subir 30: " + linea102.usuarios);
+   linea102.subir(20);
+   console.log("Pasajeros al subir 20: " + linea102.usuarios);
+   linea102.bajar(30);
+   console.log("Pasajeros al bajar 30: " + linea102.usuarios);
 
 // EJERCICIO 7:
 
